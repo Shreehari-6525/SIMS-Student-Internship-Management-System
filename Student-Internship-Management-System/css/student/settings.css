@@ -1,0 +1,220 @@
+.main-content{
+    background:#F5F7FA;
+}
+
+.settings-section{
+    margin:35px;
+}
+
+/* ================= Tabs ================= */
+
+.tabs{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.tabs button{
+    background:#FFFFFF;
+    border:1px solid #E5E7EB;
+    color:#555;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+    transition:.3s;
+}
+
+.tabs button:hover{
+    border-color:#FF7A1A;
+    color:#FF7A1A;
+}
+
+.tabs button.active{
+    background:#FF7A1A;
+    color:#FFFFFF;
+    border-color:#FF7A1A;
+}
+
+/* ================= Tab Panels ================= */
+
+.tab-panel{
+    display:none;
+}
+
+.tab-panel.active{
+    display:block;
+    animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
+}
+
+.settings-card{
+    padding:35px;
+}
+
+.settings-card h2{
+    color:#1F2937;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    font-weight:600;
+    color:#1F2937;
+    margin-bottom:8px;
+    display:block;
+}
+
+/* ================= Toggle Switches ================= */
+
+.toggle-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #F0F0F0;
+    gap:20px;
+}
+
+.toggle-row:last-child{
+    border-bottom:none;
+}
+
+.toggle-row h3{
+    color:#1F2937;
+    font-size:16px;
+    margin-bottom:4px;
+}
+
+.toggle-row p{
+    color:#888;
+    font-size:14px;
+}
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:52px;
+    height:28px;
+    flex-shrink:0;
+}
+
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position:absolute;
+    cursor:pointer;
+    inset:0;
+    background:#CBD5E1;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.slider::before{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    left:3px;
+    bottom:3px;
+    background:#FFFFFF;
+    border-radius:50%;
+    transition:.3s;
+}
+
+.switch input:checked + .slider{
+    background:#FF7A1A;
+}
+
+.switch input:checked + .slider::before{
+    transform:translateX(24px);
+}
+
+/* ================= Danger Zone ================= */
+
+.danger-card{
+    border:1px solid #FEE2E2;
+}
+
+.danger-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid #F0F0F0;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.danger-row:last-child{
+    border-bottom:none;
+}
+
+.danger-row h3{
+    color:#1F2937;
+    font-size:16px;
+    margin-bottom:4px;
+}
+
+.danger-row p{
+    color:#888;
+    font-size:14px;
+}
+
+.danger-btn{
+    color:#DC2626;
+    border-color:#DC2626;
+}
+
+.danger-btn:hover{
+    background:#DC2626;
+    color:#FFFFFF;
+}
+
+.danger-btn-solid{
+    background:#DC2626;
+    color:#FFFFFF;
+    border:none;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.danger-btn-solid:hover{
+    background:#991B1B;
+}
+
+@media (max-width:576px){
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .toggle-row,
+    .danger-row{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}

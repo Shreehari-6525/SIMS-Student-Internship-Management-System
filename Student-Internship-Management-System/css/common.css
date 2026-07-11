@@ -1,0 +1,313 @@
+/* ===========================================
+   SIMS - Common Stylesheet
+   Used Across Entire Project
+=========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Color Variables */
+
+:root{
+
+    --primary:#FF7A1A;
+    --primary-hover:#e8680d;
+
+    --dark:#1F2937;
+    --sidebar:#111827;
+
+    --white:#FFFFFF;
+
+    --card:#FFFFFF;
+
+    --light:#F3F4F6;
+
+    --text:#D1D5DB;
+
+    --heading:#1F2937;
+
+    --border:#D6D6D6;
+
+    --shadow:0 10px 30px rgba(0,0,0,.20);
+
+    --radius:12px;
+
+    --transition:.3s ease;
+
+}
+
+/* HTML */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--dark);
+
+    color:var(--white);
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* Lists */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    background:black;
+
+    transform:translateY(-2px);
+
+}
+
+/* Input Fields */
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 8px rgba(255,122,26,.25);
+
+}
+
+/* Labels */
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:var(--heading);
+
+}
+
+/* Cards */
+
+.card{
+
+    background:var(--card);
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* Containers */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* Section Spacing */
+
+section{
+
+    padding:80px 0;
+
+}
+
+/* Headings */
+
+h1{
+
+    font-size:42px;
+
+}
+
+h2{
+
+    font-size:34px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+}
+
+p{
+
+    line-height:1.7;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e5e5e5;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* Utility Classes */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.grid{
+
+    display:grid;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}
+
+.card{
+    background:white;
+}

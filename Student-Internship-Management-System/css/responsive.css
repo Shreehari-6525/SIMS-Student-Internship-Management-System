@@ -1,0 +1,253 @@
+/* ===========================================================
+   SIMS - Global Responsive & Shared Interaction Styles
+   Included on every dashboard page (Student / Company / Admin)
+=========================================================== */
+
+/* ================= Hamburger Toggle ================= */
+
+.menu-toggle{
+    display:none;
+    background:transparent;
+    border:none;
+    font-size:26px;
+    color:#1F2937;
+    cursor:pointer;
+    margin-right:15px;
+}
+
+/* ================= Dark Overlay ================= */
+
+.sidebar-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:1400;
+    opacity:0;
+    transition:opacity .3s ease;
+}
+
+.sidebar-overlay.active{
+    display:block;
+    opacity:1;
+}
+
+/* ================= Shared Error / Success States ================= */
+
+.input-error{
+    border-color:#DC2626 !important;
+    box-shadow:0 0 8px rgba(220,38,38,.25) !important;
+}
+
+.error-text{
+    display:block;
+    color:#DC2626;
+    font-size:13px;
+    font-weight:500;
+    margin-top:-14px;
+    margin-bottom:14px;
+}
+
+.form-success{
+    display:none;
+    background:#DCFCE7;
+    color:#15803D;
+    border:1px solid #86EFAC;
+    padding:14px 18px;
+    border-radius:10px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.form-success.show{
+    display:block;
+}
+
+/* ================= Shared Modal ================= */
+
+.modal-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(17,24,39,.65);
+    z-index:1500;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal-overlay.show{
+    display:flex;
+}
+
+.modal-box{
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    width:100%;
+    max-width:520px;
+    max-height:85vh;
+    overflow-y:auto;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    position:relative;
+    animation:modalPop .25s ease;
+}
+
+@keyframes modalPop{
+    from{ opacity:0; transform:translateY(20px) scale(.97); }
+    to{ opacity:1; transform:translateY(0) scale(1); }
+}
+
+.modal-box h2{
+    color:#1F2937;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.modal-close{
+    position:absolute;
+    top:18px;
+    right:22px;
+    background:none;
+    border:none;
+    font-size:22px;
+    cursor:pointer;
+    color:#888;
+}
+
+.modal-close:hover{
+    color:#1F2937;
+}
+
+/* ================= Pagination (static UI) ================= */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.pagination button,
+.pagination span{
+    min-width:42px;
+    height:42px;
+    border-radius:10px;
+    border:1px solid #E5E7EB;
+    background:#FFFFFF;
+    color:#1F2937;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.pagination button:hover,
+.pagination .active{
+    background:#FF7A1A;
+    color:#FFFFFF;
+    border-color:#FF7A1A;
+}
+
+/* ================= Empty State ================= */
+
+.empty-state{
+    text-align:center;
+    padding:60px 30px;
+    color:#666;
+}
+
+.empty-state .empty-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.empty-state h3{
+    color:#1F2937;
+    margin-bottom:10px;
+}
+
+/* ================= Responsive Breakpoints ================= */
+
+@media (max-width:992px){
+
+    .sidebar{
+        width:240px;
+    }
+
+    .main-content{
+        margin-left:240px;
+    }
+
+    .action-grid,
+    .stats{
+        grid-template-columns:repeat(2,1fr) !important;
+    }
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:inline-block;
+    }
+
+    .dashboard{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:fixed;
+        left:0;
+        top:0;
+        height:100vh;
+        width:270px;
+        transform:translateX(-110%);
+        transition:transform .35s ease;
+        z-index:1500;
+    }
+
+    .sidebar.open{
+        transform:translateX(0);
+    }
+
+    .main-content{
+        margin-left:0 !important;
+    }
+
+    .topbar{
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    .action-grid,
+    .stats{
+        grid-template-columns:1fr 1fr !important;
+    }
+
+    .welcome-banner{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .welcome-banner .banner-text{
+        width:100% !important;
+    }
+}
+
+@media (max-width:576px){
+
+    .action-grid,
+    .stats{
+        grid-template-columns:1fr !important;
+    }
+
+    .modal-box{
+        padding:25px;
+    }
+}

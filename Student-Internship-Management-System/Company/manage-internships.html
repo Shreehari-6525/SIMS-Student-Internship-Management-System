@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Internships | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/company/company-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/company/manage-internships.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="blue">S</span>IMS</h2>
+            <p>Company Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">🏢 Company Profile</a></li>
+            <li><a href="post-internships.html">➕ Post Internship</a></li>
+            <li class="active"><a href="manage-internships.html">💼 Manage Internships</a></li>
+            <li><a href="applications.html">📄 Applications</a></li>
+            <li><a href="shortlisted.html">⭐ Shortlisted Students</a></li>
+            <li><a href="interviews.html">📅 Interviews</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Manage Internships</h2>
+                <p>View, edit or close internship postings.</p>
+            </div>
+            <div class="profile">🏢 Google India Pvt. Ltd.</div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container card">
+                <div class="search-box">
+                    <input type="text" placeholder="Search by title or department..." data-search-input=".internship-row">
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Closed</option>
+                        <option>Draft</option>
+                    </select>
+                </div>
+                <a href="post-internships.html" class="primary-btn">+ Post New</a>
+            </div>
+        </section>
+
+        <section class="manage-section">
+
+            <div class="section-header">
+                <h2>All Internships</h2>
+                <p>4 postings</p>
+            </div>
+
+            <div class="content-card manage-table card">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Department</th>
+                            <th>Applications</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="internship-row">
+                            <td>Software Development Intern</td>
+                            <td>Engineering</td>
+                            <td>62</td>
+                            <td>31 Aug 2026</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View">👁</button>
+                                <button class="icon-btn" title="Edit">✏</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="internship-row">
+                            <td>Java Developer Intern</td>
+                            <td>Engineering</td>
+                            <td>41</td>
+                            <td>15 Aug 2026</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View">👁</button>
+                                <button class="icon-btn" title="Edit">✏</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="internship-row">
+                            <td>UI/UX Design Intern</td>
+                            <td>Design</td>
+                            <td>29</td>
+                            <td>10 July 2026</td>
+                            <td><span class="status draft">Draft</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View">👁</button>
+                                <button class="icon-btn" title="Edit">✏</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="internship-row">
+                            <td>Data Analyst Intern</td>
+                            <td>Data Science</td>
+                            <td>16</td>
+                            <td>1 June 2026</td>
+                            <td><span class="status closed">Closed</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View">👁</button>
+                                <button class="icon-btn" title="Edit">✏</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="pagination">
+                <button>←</button>
+                <span class="active">1</span>
+                <button>→</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

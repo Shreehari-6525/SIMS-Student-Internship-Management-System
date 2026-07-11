@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin/admin-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="purple">S</span>IMS</h2>
+            <p>Admin Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="admin-dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">🎓 Manage Students</a></li>
+            <li><a href="companies.html">🏢 Manage Companies</a></li>
+            <li><a href="internship.html">💼 Manage Internships</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Admin Dashboard 👋</h2>
+                <p>Monitor and manage the entire SIMS platform.</p>
+            </div>
+            <div class="profile">🛡 Admin</div>
+        </header>
+
+        <!-- ================= Welcome Banner ================= -->
+
+        <section class="welcome-banner">
+            <div class="banner-text">
+                <h1>Welcome Back, Admin 👋</h1>
+                <p>
+                    Oversee students, companies and internship postings, verify
+                    records, and generate insightful platform-wide reports.
+                </p>
+                <a href="reports.html" class="post-btn">View Reports</a>
+            </div>
+            <div class="banner-image">🛡📊</div>
+        </section>
+
+        <!-- ================= Statistics ================= -->
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>1,240</h2>
+                <p>Registered Students</p>
+            </div>
+            <div class="stat-card">
+                <h2>186</h2>
+                <p>Registered Companies</p>
+            </div>
+            <div class="stat-card">
+                <h2>342</h2>
+                <p>Active Internships</p>
+            </div>
+            <div class="stat-card">
+                <h2>2,910</h2>
+                <p>Total Applications</p>
+            </div>
+        </section>
+
+        <!-- ================= Quick Actions ================= -->
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-grid">
+                <a href="students.html" class="action-card">
+                    <div class="action-icon">🎓</div>
+                    <h3>Manage Students</h3>
+                </a>
+                <a href="companies.html" class="action-card">
+                    <div class="action-icon">🏢</div>
+                    <h3>Manage Companies</h3>
+                </a>
+                <a href="internship.html" class="action-card">
+                    <div class="action-icon">💼</div>
+                    <h3>Manage Internships</h3>
+                </a>
+                <a href="reports.html" class="action-card">
+                    <div class="action-icon">📊</div>
+                    <h3>Generate Reports</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= Recent Registrations ================= -->
+
+        <section class="recent-applications">
+
+            <div class="section-header">
+                <h2>Recent Registrations</h2>
+                <a href="students.html" class="view-all">View All →</a>
+            </div>
+
+            <div class="content-card manage-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Registered On</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shreehari Patil</td>
+                            <td>Student</td>
+                            <td>9 Jul 2026</td>
+                            <td><span class="status active">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Google India Pvt. Ltd.</td>
+                            <td>Company</td>
+                            <td>7 Jul 2026</td>
+                            <td><span class="status active">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rohan Sharma</td>
+                            <td>Student</td>
+                            <td>6 Jul 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>Zoho Corporation</td>
+                            <td>Company</td>
+                            <td>4 Jul 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- ================= Platform Alerts ================= -->
+
+        <section class="upcoming-interviews">
+            <div class="section-header">
+                <h2>Platform Alerts</h2>
+            </div>
+
+            <div class="interview-grid">
+                <div class="interview-card content-card">
+                    <h3>⚠ 5 Companies Awaiting Verification</h3>
+                    <p>Review submitted registration documents before approving.</p>
+                    <a href="companies.html" class="primary-btn full-width">Review Now</a>
+                </div>
+                <div class="interview-card content-card">
+                    <h3>📄 12 Internships Flagged</h3>
+                    <p>Postings reported by students for review and moderation.</p>
+                    <a href="internship.html" class="primary-btn full-width">Review Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

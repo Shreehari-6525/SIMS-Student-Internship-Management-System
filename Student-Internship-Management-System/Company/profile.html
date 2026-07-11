@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Profile | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/company/company-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/company/profile.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="blue">S</span>IMS</h2>
+            <p>Company Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li class="active"><a href="profile.html">🏢 Company Profile</a></li>
+            <li><a href="post-internships.html">➕ Post Internship</a></li>
+            <li><a href="manage-internships.html">💼 Manage Internships</a></li>
+            <li><a href="applications.html">📄 Applications</a></li>
+            <li><a href="shortlisted.html">⭐ Shortlisted Students</a></li>
+            <li><a href="interviews.html">📅 Interviews</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Company Profile</h2>
+                <p>Manage your organization's public recruiter profile.</p>
+            </div>
+            <div class="profile">🏢 Google India Pvt. Ltd.</div>
+        </header>
+
+        <!-- ================= Profile Hero ================= -->
+
+        <section class="profile-hero">
+            <div class="profile-card card">
+                <div class="profile-left">
+                    <div class="avatar-placeholder" id="logo-preview">G</div>
+                    <div class="profile-info">
+                        <h1>Google India Pvt. Ltd.</h1>
+                        <p class="role">Information Technology &amp; Cloud Services</p>
+                        <p>📍 Pune, Maharashtra, India</p>
+                        <p>🌐 www.google.co.in</p>
+                        <p>✉ hr.recruitment@google.com</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <label class="secondary-btn upload-label">
+                        Upload Logo
+                        <input type="file" accept="image/*" data-image-input="logo-preview" hidden>
+                    </label>
+                    <button class="edit-btn primary-btn">Edit Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Company Information ================= -->
+
+        <section class="personal-info">
+            <div class="section-header"><h2>Company Information</h2></div>
+            <div class="info-card card">
+
+                <div class="form-success" id="form-success">Company profile updated successfully!</div>
+
+                <form data-validate>
+                    <div class="form-row">
+                        <div class="input-box">
+                            <label>Company Name</label>
+                            <input type="text" value="Google India Pvt. Ltd." required>
+                        </div>
+                        <div class="input-box">
+                            <label>Industry Type</label>
+                            <select required>
+                                <option>Information Technology</option>
+                                <option>Finance</option>
+                                <option>Manufacturing</option>
+                                <option>E-Commerce</option>
+                                <option>Healthcare</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-box">
+                            <label>Official Email</label>
+                            <input type="email" value="hr.recruitment@google.com" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Contact Number</label>
+                            <input type="tel" value="9123456789" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-box">
+                            <label>Website</label>
+                            <input type="text" value="www.google.co.in" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Company Size</label>
+                            <select required>
+                                <option>1 - 50 Employees</option>
+                                <option>51 - 200 Employees</option>
+                                <option>201 - 1000 Employees</option>
+                                <option selected>1000+ Employees</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Registered Address</label>
+                        <input type="text" value="Kharadi, Pune, Maharashtra, India" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>About the Company</label>
+                        <textarea rows="5" required>Google India Pvt. Ltd. is the Indian subsidiary of Google LLC, delivering world-class technology products and services across search, cloud, and consumer software.</textarea>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Save Changes</button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- ================= Hiring Stats ================= -->
+
+        <section class="skills-section">
+            <div class="section-header"><h2>Hiring Snapshot</h2></div>
+            <div class="stats-grid">
+                <div class="mini-stat card">
+                    <h2>12</h2>
+                    <p>Internships Posted</p>
+                </div>
+                <div class="mini-stat card">
+                    <h2>148</h2>
+                    <p>Applications Received</p>
+                </div>
+                <div class="mini-stat card">
+                    <h2>36</h2>
+                    <p>Students Hired</p>
+                </div>
+                <div class="mini-stat card">
+                    <h2>4.7★</h2>
+                    <p>Recruiter Rating</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Verification Documents ================= -->
+
+        <section class="resume-section">
+            <div class="section-header"><h2>Verification Documents</h2></div>
+            <div class="resume-card card">
+                <div class="resume-left">
+                    <div class="resume-icon">📄</div>
+                    <div class="resume-details">
+                        <h3>Company_Registration_Certificate.pdf</h3>
+                        <p>Verified on 15 June 2026</p>
+                        <p>Size: 2.4 MB</p>
+                    </div>
+                </div>
+                <div class="resume-actions">
+                    <button class="download-btn">Download</button>
+                    <button class="replace-btn">Replace</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

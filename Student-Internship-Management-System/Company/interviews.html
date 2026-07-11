@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Schedule | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/company/company-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/company/interviews.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="blue">S</span>IMS</h2>
+            <p>Company Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">🏢 Company Profile</a></li>
+            <li><a href="post-internships.html">➕ Post Internship</a></li>
+            <li><a href="manage-internships.html">💼 Manage Internships</a></li>
+            <li><a href="applications.html">📄 Applications</a></li>
+            <li><a href="shortlisted.html">⭐ Shortlisted Students</a></li>
+            <li class="active"><a href="interviews.html">📅 Interviews</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Interview Schedule</h2>
+                <p>Manage upcoming and completed interviews.</p>
+            </div>
+            <div class="profile">🏢 Google India Pvt. Ltd.</div>
+        </header>
+
+        <section class="interview-actions">
+            <button class="primary-btn" data-modal-open="modal-schedule">+ Schedule Interview</button>
+        </section>
+
+        <section class="upcoming-interviews">
+
+            <div class="section-header">
+                <h2>Upcoming Interviews</h2>
+                <p>10 scheduled</p>
+            </div>
+
+            <div class="interview-grid">
+
+                <div class="interview-card card">
+                    <div class="interview-company">
+                        <div class="student-avatar">VG</div>
+                        <div>
+                            <h3>Vaishnav Gole</h3>
+                            <p>Frontend Developer Intern</p>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <p>📅 <strong>14 July 2026</strong></p>
+                        <p>🕒 <strong>11:00 AM</strong></p>
+                        <p>📍 Google Meet</p>
+                    </div>
+                    <div class="interview-buttons">
+                        <button class="secondary-btn">Reschedule</button>
+                        <button class="primary-btn">Join</button>
+                    </div>
+                </div>
+
+                <div class="interview-card card">
+                    <div class="interview-company">
+                        <div class="student-avatar">AK</div>
+                        <div>
+                            <h3>Anjali Kulkarni</h3>
+                            <p>Software Development Intern</p>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <p>📅 <strong>15 July 2026</strong></p>
+                        <p>🕒 <strong>2:00 PM</strong></p>
+                        <p>📍 Google Meet</p>
+                    </div>
+                    <div class="interview-buttons">
+                        <button class="secondary-btn">Reschedule</button>
+                        <button class="primary-btn">Join</button>
+                    </div>
+                </div>
+
+                <div class="interview-card card">
+                    <div class="interview-company">
+                        <div class="student-avatar">RS</div>
+                        <div>
+                            <h3>Rohan Sharma</h3>
+                            <p>Java Developer Intern</p>
+                        </div>
+                    </div>
+                    <div class="interview-info">
+                        <p>📅 <strong>16 July 2026</strong></p>
+                        <p>🕒 <strong>10:30 AM</strong></p>
+                        <p>📍 Office - Kharadi</p>
+                    </div>
+                    <div class="interview-buttons">
+                        <button class="secondary-btn">Reschedule</button>
+                        <button class="primary-btn">Join</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="completed-interviews">
+
+            <div class="section-header">
+                <h2>Completed Interviews</h2>
+            </div>
+
+            <div class="content-card manage-table card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Role</th>
+                            <th>Date</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shreehari Patil</td>
+                            <td>Software Development Intern</td>
+                            <td>2 Jul 2026</td>
+                            <td><span class="status active">Selected</span></td>
+                        </tr>
+                        <tr>
+                            <td>Priya Nair</td>
+                            <td>Data Analyst Intern</td>
+                            <td>28 Jun 2026</td>
+                            <td><span class="status closed">Not Selected</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= Schedule Interview Modal ================= -->
+
+<div class="modal-overlay" id="modal-schedule">
+    <div class="modal-box">
+        <button class="modal-close" data-modal-close>&times;</button>
+        <h2>Schedule Interview</h2>
+        <form data-validate data-reset-on-success>
+            <div class="input-box">
+                <label>Candidate</label>
+                <select required>
+                    <option>Vaishnav Gole - Frontend Developer Intern</option>
+                    <option>Anjali Kulkarni - Software Development Intern</option>
+                    <option>Rohan Sharma - Java Developer Intern</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-box">
+                    <label>Time</label>
+                    <input type="time" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Mode</label>
+                <select required>
+                    <option>Google Meet</option>
+                    <option>Microsoft Teams</option>
+                    <option>Office - In Person</option>
+                </select>
+            </div>
+            <button type="submit" class="primary-btn full-width">Confirm Schedule</button>
+        </form>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

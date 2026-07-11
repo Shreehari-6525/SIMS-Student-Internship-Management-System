@@ -1,0 +1,345 @@
+/* ================= Welcome Banner ================= */
+
+.welcome-banner{
+
+    margin:35px;
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#FFFFFF;
+
+}
+
+.banner-text{
+
+    width:65%;
+
+}
+
+.banner-text h1{
+
+    font-size:36px;
+    margin-bottom:15px;
+
+}
+
+.banner-text p{
+
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.post-btn{
+
+    display:inline-block;
+    padding:14px 28px;
+    background:#FFFFFF;
+    color:#2563EB;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.post-btn:hover{
+
+    background:#1E3A8A;
+    color:#FFFFFF;
+
+}
+
+.banner-image{
+
+    font-size:90px;
+
+}
+
+/* ================= Statistics ================= */
+
+.stats{
+
+    margin:35px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+    border:2px solid #2563EB;
+
+}
+
+.stat-card h2{
+
+    font-size:42px;
+    color:#2563EB;
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#555;
+    font-weight:500;
+
+}
+
+/* ================= Quick Actions ================= */
+
+.quick-actions{
+
+    margin:35px;
+
+}
+
+.quick-actions h2{
+
+    color:#1F2937;
+    margin-bottom:25px;
+
+}
+
+.action-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.action-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    text-decoration:none;
+    color:#1F2937;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.action-card:hover{
+
+    background:#2563EB;
+    color:#FFFFFF;
+    transform:translateY(-8px);
+
+}
+
+.action-icon{
+
+    font-size:45px;
+    margin-bottom:15px;
+
+}
+
+/* ================= Recent Applications ================= */
+
+.recent-applications{
+
+    margin:35px;
+
+}
+
+.application-list{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.application-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.application-card:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.student-info{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.student-avatar{
+
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#2563EB;
+    color:#FFFFFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:700;
+
+}
+
+.student-info h3{
+
+    color:#1F2937;
+    margin-bottom:6px;
+
+}
+
+.student-info p{
+
+    color:#555;
+    margin-bottom:5px;
+
+}
+
+.student-info span{
+
+    color:#888;
+    font-size:14px;
+
+}
+
+.student-details{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:#444;
+    font-size:15px;
+
+}
+
+.pending{
+
+    color:#F59E0B;
+
+}
+
+.review{
+
+    color:#2563EB;
+
+}
+
+.shortlisted{
+
+    color:#16A34A;
+
+}
+
+.application-actions{
+
+    display:flex;
+    gap:12px;
+
+}
+
+.view-btn{
+
+    background:#FFFFFF;
+    color:#2563EB;
+    border:2px solid #2563EB;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#2563EB;
+    color:#FFFFFF;
+
+}
+
+.shortlist-btn{
+
+    background:#2563EB;
+    color:#FFFFFF;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.shortlist-btn:hover{
+
+    background:#1E3A8A;
+
+}
+
+@media(max-width:992px){
+
+    .application-card{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+
+    }
+
+    .application-actions{
+
+        width:100%;
+
+    }
+
+    .view-btn,
+    .shortlist-btn{
+
+        flex:1;
+
+    }
+
+}
+.view-all{
+    color:#2563EB;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.view-all:hover{
+    color:#1F2937;
+}

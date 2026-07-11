@@ -1,0 +1,267 @@
+.main-content{
+
+    background:#F5F7FA;
+
+}
+
+/* ================= Search Section ================= */
+
+.search-section{
+
+    margin:35px;
+
+}
+
+.search-container{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:25px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr auto;
+    gap:20px;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.search-box input{
+
+    width:100%;
+    padding:14px 18px;
+    border:1px solid #DDD;
+    border-radius:10px;
+    font-size:15px;
+
+}
+
+.filter-box select{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #DDD;
+    border-radius:10px;
+    font-size:15px;
+    background:#FFFFFF;
+    cursor:pointer;
+
+}
+
+.search-btn{
+
+    background:#FF7A1A;
+    color:#FFFFFF;
+    border:none;
+    padding:14px 24px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.search-btn:hover{
+
+    background:#1F2937;
+
+}
+
+@media(max-width:992px){
+
+    .search-container{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .search-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ================= Internship Section ================= */
+
+.internships-section{
+
+    margin:35px;
+
+}
+
+.internships-section .section-header{
+
+    margin-bottom:30px;
+
+}
+
+.internship-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+
+}
+
+/* ================= Card ================= */
+
+.internship-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.internship-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.company-header{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+
+.company-logo{
+
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#FF7A1A;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:700;
+
+}
+
+.microsoft{
+
+    background:#0078D4;
+
+}
+
+.amazon{
+
+    background:#232F3E;
+
+}
+
+.company-header h3{
+
+    color:#1F2937;
+    margin-bottom:5px;
+
+}
+
+.company-header span{
+
+    color:#666;
+
+}
+
+.internship-info{
+
+    margin:20px 0;
+
+}
+
+.internship-info p{
+
+    margin:10px 0;
+    color:#555;
+
+}
+
+.skills{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+
+}
+
+.skills span{
+
+    background:#FFF3E8;
+    color:#FF7A1A;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.posted{
+
+    color:#777;
+    font-size:14px;
+    margin-bottom:20px;
+
+}
+
+.card-buttons{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.save-btn,
+.apply-btn{
+
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.save-btn{
+
+    background:#F3F4F6;
+    color:#1F2937;
+
+}
+
+.save-btn:hover{
+
+    background:#1F2937;
+    color:white;
+
+}
+
+.apply-btn{
+
+    text-align: center;
+    background:#FF7A1A;
+    color:white;
+
+}
+
+.apply-btn:hover{
+
+    background:#1F2937;
+
+}

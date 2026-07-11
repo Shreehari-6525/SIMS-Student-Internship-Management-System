@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/company/company-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/company/settings.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="blue">S</span>IMS</h2>
+            <p>Company Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">🏢 Company Profile</a></li>
+            <li><a href="post-internships.html">➕ Post Internship</a></li>
+            <li><a href="manage-internships.html">💼 Manage Internships</a></li>
+            <li><a href="applications.html">📄 Applications</a></li>
+            <li><a href="shortlisted.html">⭐ Shortlisted Students</a></li>
+            <li><a href="interviews.html">📅 Interviews</a></li>
+            <li class="active"><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Settings</h2>
+                <p>Manage recruiter account preferences and security.</p>
+            </div>
+            <div class="profile">🏢 Google India Pvt. Ltd.</div>
+        </header>
+
+        <section class="settings-section">
+
+            <div class="tabs">
+                <button class="active" data-tab-target="tab-account">🏢 Account</button>
+                <button data-tab-target="tab-password">🔒 Password</button>
+                <button data-tab-target="tab-notifications">🔔 Notifications</button>
+                <button data-tab-target="tab-team">👥 Team Access</button>
+            </div>
+
+            <div class="tab-panels">
+
+                <div class="tab-panel active" id="tab-account">
+                    <div class="content-card settings-card card">
+
+                        <div class="form-success" id="form-success">Account settings updated successfully!</div>
+
+                        <h2>Recruiter Account</h2>
+
+                        <form data-validate>
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <label>HR Contact Name</label>
+                                    <input type="text" value="Ananya Deshmukh" required>
+                                </div>
+                                <div class="input-box">
+                                    <label>Email Address</label>
+                                    <input type="email" value="hr.recruitment@google.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <label>Phone Number</label>
+                                    <input type="tel" value="9123456789" required>
+                                </div>
+                                <div class="input-box">
+                                    <label>Designation</label>
+                                    <input type="text" value="Talent Acquisition Lead" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="primary-btn">Save Changes</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-password">
+                    <div class="content-card settings-card card">
+                        <h2>Change Password</h2>
+                        <form data-validate data-reset-on-success>
+                            <div class="input-box">
+                                <label>Current Password</label>
+                                <input type="password" placeholder="Enter current password" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <label>New Password</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter new password" required>
+                                </div>
+                                <div class="input-box">
+                                    <label>Confirm New Password</label>
+                                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter new password" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="primary-btn">Update Password</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-notifications">
+                    <div class="content-card settings-card card">
+                        <h2>Notification Preferences</h2>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>New Application Alerts</h3>
+                                <p>Get notified whenever a student applies.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Interview Reminders</h3>
+                                <p>Reminders before scheduled interviews.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Weekly Hiring Summary</h3>
+                                <p>Receive a digest of hiring activity every week.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-team">
+                    <div class="content-card settings-card card">
+                        <h2>Team Access</h2>
+                        <p class="hint-text">Manage who from your organization can post internships and review applications.</p>
+
+                        <div class="team-row">
+                            <div class="team-member">
+                                <div class="student-avatar">AD</div>
+                                <div>
+                                    <h3>Ananya Deshmukh</h3>
+                                    <p>Talent Acquisition Lead • Admin</p>
+                                </div>
+                            </div>
+                            <button class="secondary-btn">Manage</button>
+                        </div>
+
+                        <div class="team-row">
+                            <div class="team-member">
+                                <div class="student-avatar">KV</div>
+                                <div>
+                                    <h3>Karan Verma</h3>
+                                    <p>HR Executive • Editor</p>
+                                </div>
+                            </div>
+                            <button class="secondary-btn">Manage</button>
+                        </div>
+
+                        <button class="primary-btn mt-15">+ Invite Team Member</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

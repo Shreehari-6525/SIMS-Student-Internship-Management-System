@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Login / Register
+        </title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <script>
+        function validateLogin(event) {
+
+            event.preventDefault(); 
+
+            let drop_value = document.getElementById("log-type").value;
+            let uname = document.getElementById("uname").value;
+            let pass = document.getElementById("pass").value;
+
+            if (
+                drop_value == "admin" &&
+                uname == "admin123" &&
+                pass == "admin@123"
+            ) {
+                window.location.href = "Admin/admin-dashboard.html";
+            } else if (
+                drop_value == "student" &&
+                uname == "student123" &&
+                pass == "student@123"
+            ) {
+                window.location.href = "Student/dashboard.html";
+            } else if (
+                drop_value == "company" &&
+                uname == "company123" &&
+                pass == "company@123"
+            ) {
+                window.location.href = "Company/dashboard.html";
+            } else if (drop_value == "intro") {
+                alert("Please select a login type.");
+            } else {
+                alert("Invalid Login");
+            }
+
+            return false;
+        }
+    </script>
+    <body>
+
+        <div class="logo">
+            <h1>
+            <span class="logo-orange">S</span><span class="logo-white">IMS🌐</span>
+            </h1>
+            <p>
+                <span class="orange">Student</span>
+                <span class="white">Internship</span>
+                <span class="white">Mgmt</span>
+                <span class="white">System </span>
+            </p>
+        </div>
+
+
+    <div class="container">
+
+        <div class="left-panel">
+
+            <img src="images/hero-image.png"
+                alt="Login Illustration">
+
+        </div>
+
+         <div class="right-panel">
+   
+            <div class="login-card">
+
+            <h1>Welcome Back</h1>
+
+            <form onsubmit="return validateLogin(event)" method="post">
+
+                <div class="form-group">
+                    <label>Login Type:</label>
+                    <select id="log-type" name="login-type">
+                        <option value="intro">--Select Type--</option>
+                        <option value="student">Student</option>
+                        <option value="company">Company</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Username: </label>
+                    <input type="text" 
+                       id="uname" 
+                       name="username"
+                       placeholder="Enter Username"
+                       required>
+                </div>
+                
+                <div class="form-group">
+
+                    <label>Password: </label>
+                    <input type="password" 
+                           id="pass"
+                           name="password"
+                           placeholder="Enter Password"
+                           required>
+                </div>
+
+                <button type="submit" >Login</button><br><br>
+
+                <div class="login-links">
+                    <a href="forgot.html">Forgot Password?</a> <span>|</span>
+                   <span>New user?</span> <a href="register.html">Register</a>
+
+                </div>
+
+            </form>
+<!-- 
+            <p class="demo-hint">
+                Demo Logins — Student: student123 / student@123 &nbsp;•&nbsp;
+                Company: company123 / company@123 &nbsp;•&nbsp;
+                Admin: admin123 / admin@123
+            </p> -->
+
+        </div>
+
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,218 @@
+/* ================= Welcome Banner ================= */
+
+.welcome-banner{
+    margin:35px;
+    background:linear-gradient(135deg,#7C3AED,#A78BFA);
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#FFFFFF;
+}
+
+.banner-text{
+    width:65%;
+}
+
+.banner-text h1{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.banner-text p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.post-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#FFFFFF;
+    color:#7C3AED;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.post-btn:hover{
+    background:#1E1B4B;
+    color:#FFFFFF;
+}
+
+.banner-image{
+    font-size:90px;
+}
+
+/* ================= Statistics ================= */
+
+.stats{
+    margin:35px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    border:2px solid #7C3AED;
+}
+
+.stat-card h2{
+    font-size:38px;
+    color:#7C3AED;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#555;
+    font-weight:500;
+}
+
+/* ================= Quick Actions ================= */
+
+.quick-actions{
+    margin:35px;
+}
+
+.quick-actions h2{
+    color:#1F2937;
+    margin-bottom:25px;
+}
+
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.action-card{
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    text-decoration:none;
+    color:#1F2937;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.action-card:hover{
+    background:#7C3AED;
+    color:#FFFFFF;
+    transform:translateY(-8px);
+}
+
+.action-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+/* ================= Recent Registrations Table ================= */
+
+.recent-applications{
+    margin:35px;
+}
+
+.manage-table{
+    padding:20px;
+    overflow-x:auto;
+}
+
+.manage-table table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:600px;
+}
+
+.manage-table th{
+    text-align:left;
+    padding:16px;
+    background:#F5F3FF;
+    color:#1F2937;
+    font-size:14px;
+}
+
+.manage-table td{
+    padding:16px;
+    border-top:1px solid #E5E7EB;
+    color:#555;
+    font-size:14px;
+}
+
+.manage-table tr:hover{
+    background:#FAF5FF;
+}
+
+.status{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.status.active{ background:#DCFCE7; color:#15803D; }
+.status.pending{ background:#FEF3C7; color:#B45309; }
+.status.closed{ background:#FEE2E2; color:#B91C1C; }
+
+.view-all{
+    color:#7C3AED;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.view-all:hover{
+    color:#1F2937;
+}
+
+/* ================= Platform Alerts ================= */
+
+.upcoming-interviews{
+    margin:35px;
+}
+
+.interview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.interview-card{
+    padding:28px;
+    transition:.3s;
+}
+
+.interview-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.interview-card h3{
+    color:#1F2937;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.interview-card p{
+    color:#666;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.full-width{
+    width:100%;
+    text-align:center;
+}

@@ -1,0 +1,694 @@
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    color:white;
+    padding:30px 20px;
+    position:fixed;
+    height:100vh;
+}
+
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.logo h2{
+
+    font-size:34px;
+
+}
+
+.orange{
+
+    color:#FF7A1A;
+
+}
+
+.logo p{
+
+    color:#D1D5DB;
+
+    font-size:14px;
+
+}
+
+.menu{
+
+    list-style:none;
+
+}
+
+.menu li{
+
+    margin:12px 0;
+
+}
+
+.menu li a{
+
+    display:block;
+
+    padding:14px 18px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.menu li a:hover{
+
+    background:#FF7A1A;
+
+}
+
+.menu .active a{
+
+    background:#FF7A1A;
+
+}
+
+/* Main Content */
+
+.main-content{
+
+    margin-left:260px;
+
+    flex:1;
+
+    background:#F5F7FA;
+
+    min-height:100vh;
+
+}
+
+/* Topbar */
+
+.topbar{
+
+    background:white;
+
+    padding:20px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.topbar h2{
+
+    color:#1F2937;
+
+}
+
+.topbar p{
+
+    color:#666;
+
+}
+
+.profile{
+
+    background:#FF7A1A;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.welcome-banner{
+
+    margin:35px;
+
+    background:linear-gradient(135deg,#FF7A1A,#ff9347);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:white;
+
+}
+
+.banner-text{
+
+    width:65%;
+
+}
+
+.banner-text h1{
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.banner-text p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.banner-image{
+
+    font-size:90px;
+
+}
+
+/* ================= Quick Actions ================= */
+
+.quick-actions{
+
+    margin:35px;
+
+}
+
+.quick-actions h2{
+
+    color:#1F2937;
+
+    margin-bottom:25px;
+
+}
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.action-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#1F2937;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:0.3s;
+
+}
+
+.action-card:hover{
+
+    background:#FF7A1A;
+
+    color:#ffffff;
+
+    transform:translateY(-8px);
+
+}
+
+.action-icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.action-card h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+   Statistics Section
+========================== */
+
+.stats{
+
+    margin:35px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:0.3s;
+    cursor:pointer;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+    border:2px solid #FF7A1A;
+    box-shadow:0 15px 35px rgba(255,122,26,.20);
+
+}
+
+.stat-card h2{
+
+    font-size:42px;
+    font-weight:700;
+    color:#FF7A1A;
+    margin-bottom:12px;
+
+}
+
+.stat-card p{
+
+    font-size:16px;
+    font-weight:500;
+    color:#555;
+    line-height:1.5;
+
+}
+
+/* ================= Internship Section ================= */
+
+.internships{
+
+    margin:35px;
+
+}
+
+.section-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+.section-header h2{
+
+    color:#1F2937;
+    font-size:30px;
+
+}
+
+.view-all{
+
+    color:#FF7A1A;
+    font-weight:600;
+    transition:.3s;
+    text-decoration: none;
+
+}
+
+.view-all:hover{
+
+    color:#000;
+
+}
+
+.internship-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+/* ================= Card ================= */
+
+.internship-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.internship-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.company-header{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+
+.company-logo{
+
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#FF7A1A;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:700;
+
+}
+
+.company-header h3{
+
+    color:#1F2937;
+    margin-bottom:5px;
+
+}
+
+.company-header p{
+
+    color:#666;
+    font-size:14px;
+
+}
+
+.internship-details{
+
+    margin:20px 0;
+
+}
+
+.internship-details p{
+
+    margin:10px 0;
+    color:#555;
+
+}
+
+/* ================= Skills ================= */
+
+.skills{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+
+}
+
+.skills span{
+
+    background:#FFF3E8;
+    color:#FF7A1A;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+/* ================= Buttons ================= */
+
+.card-footer{
+
+    display:flex;
+    margin-top: auto;
+    justify-content:space-between;
+
+}
+
+.save-btn{
+
+    padding:10px 20px;
+    border:1px solid #FF7A1A;
+    background:white;
+    color:#FF7A1A;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.save-btn,
+.apply-btn{
+    font-size:15px;
+    font-weight:600;
+}
+
+.save-btn:hover{
+
+    background:#FF7A1A;
+    color:white;
+
+}
+
+.apply-btn{
+
+    padding:10px 22px;
+    border:none;
+    background:#FF7A1A;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.apply-btn:hover{
+
+    background:#1F2937;
+
+}
+
+
+/* ================= Recent Applications ================= */
+
+.recent-applications{
+
+    margin:35px;
+
+}
+
+.application-table{
+
+    background:#ffffff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    overflow-x:auto;
+
+}
+
+.application-table table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.application-table th{
+
+    text-align:left;
+    padding:18px;
+    background:#F9FAFB;
+    color:#1F2937;
+    font-size:15px;
+
+}
+
+.application-table td{
+
+    padding:18px;
+    border-top:1px solid #E5E7EB;
+    color:#555;
+
+}
+
+.application-table tr:hover{
+
+    background:#FFF7F2;
+
+}
+
+/* Status Badge */
+
+.status{
+
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.selected{
+
+    background:#DCFCE7;
+    color:#15803D;
+
+}
+
+.interview{
+
+    background:#DBEAFE;
+    color:#1D4ED8;
+
+}
+
+.pending{
+
+    background:#FEF3C7;
+    color:#B45309;
+
+}
+
+.rejected{
+
+    background:#FEE2E2;
+    color:#B91C1C;
+
+}
+
+
+/* ================= Upcoming Interviews ================= */
+
+.upcoming-interviews{
+
+    margin:35px;
+
+}
+
+.interview-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+
+}
+
+.interview-card{
+
+    background:#ffffff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.interview-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.interview-company{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+
+}
+
+.interview-info{
+
+    margin-bottom:25px;
+
+}
+
+.interview-info p{
+
+    margin:10px 0;
+    color:#555;
+
+}
+
+.join-btn{
+
+    width:100%;
+    padding:12px;
+    background:#FF7A1A;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.join-btn:hover{
+
+    background:#1F2937;
+
+}
+.explore-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#FFFFFF;
+    color:#FF7A1A;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.explore-btn:hover{
+    background:#1F2937;
+    color:#FFFFFF;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Companies | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin/admin-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin/students.css">
+    <link rel="stylesheet" href="../css/admin/companies.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="purple">S</span>IMS</h2>
+            <p>Admin Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="admin-dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">🎓 Manage Students</a></li>
+            <li class="active"><a href="companies.html">🏢 Manage Companies</a></li>
+            <li><a href="internship.html">💼 Manage Internships</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Manage Companies</h2>
+                <p>Review, verify and manage all registered recruiter accounts.</p>
+            </div>
+            <div class="profile">🛡 Admin</div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container card">
+                <div class="search-box">
+                    <input type="text" placeholder="Search by company or industry..." data-search-input=".data-row">
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option>All Status</option>
+                        <option>Verified</option>
+                        <option>Pending</option>
+                        <option>Blocked</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="manage-section">
+
+            <div class="section-header">
+                <h2>All Companies</h2>
+                <p>186 registered</p>
+            </div>
+
+            <div class="content-card manage-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Industry</th>
+                            <th>Postings</th>
+                            <th>Registered On</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data-row">
+                            <td>
+                                <div class="entity-cell">
+                                    <div class="avatar">G</div>
+                                    <div>
+                                        <strong>Google India Pvt. Ltd.</strong>
+                                        <span>hr.recruitment@google.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Information Technology</td>
+                            <td>12</td>
+                            <td>15 Jun 2026</td>
+                            <td><span class="status active">Verified</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-company">👁</button>
+                                <button class="icon-btn danger" title="Block">🚫</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this company account">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>
+                                <div class="entity-cell">
+                                    <div class="avatar">M</div>
+                                    <div>
+                                        <strong>Microsoft India</strong>
+                                        <span>careers@microsoft.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Information Technology</td>
+                            <td>8</td>
+                            <td>10 Jun 2026</td>
+                            <td><span class="status active">Verified</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-company">👁</button>
+                                <button class="icon-btn danger" title="Block">🚫</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this company account">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>
+                                <div class="entity-cell">
+                                    <div class="avatar">Z</div>
+                                    <div>
+                                        <strong>Zoho Corporation</strong>
+                                        <span>hr@zohocorp.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>Software Products</td>
+                            <td>5</td>
+                            <td>4 Jul 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-company">👁</button>
+                                <button class="icon-btn danger" title="Block">🚫</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this company account">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>
+                                <div class="entity-cell">
+                                    <div class="avatar">T</div>
+                                    <div>
+                                        <strong>TCS Limited</strong>
+                                        <span>campus.hiring@tcs.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>IT Services</td>
+                            <td>21</td>
+                            <td>2 May 2026</td>
+                            <td><span class="status blocked">Blocked</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-company">👁</button>
+                                <button class="icon-btn danger" title="Unblock">✅</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this company account">🗑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button>←</button>
+                <span class="active">1</span>
+                <span>2</span>
+                <button>→</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= Company View Modal ================= -->
+
+<div class="modal-overlay" id="modal-company">
+    <div class="modal-box">
+        <button class="modal-close" data-modal-close>&times;</button>
+        <h2>Company Details</h2>
+        <ul class="summary-list">
+            <li><span>Name</span><strong>Google India Pvt. Ltd.</strong></li>
+            <li><span>Industry</span><strong>Information Technology</strong></li>
+            <li><span>Website</span><strong>www.google.co.in</strong></li>
+            <li><span>Email</span><strong>hr.recruitment@google.com</strong></li>
+            <li><span>Postings</span><strong>12</strong></li>
+            <li><span>Registered On</span><strong>15 June 2026</strong></li>
+        </ul>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

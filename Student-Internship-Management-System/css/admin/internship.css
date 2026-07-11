@@ -1,0 +1,7 @@
+/* Page-specific tweaks for the Manage Internships page.
+   Base table/search styles are shared via students.css */
+
+.status.closed{
+    background:#F3F4F6;
+    color:#4B5563;
+}

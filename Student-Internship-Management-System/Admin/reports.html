@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin/admin-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin/reports.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="purple">S</span>IMS</h2>
+            <p>Admin Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="admin-dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">🎓 Manage Students</a></li>
+            <li><a href="companies.html">🏢 Manage Companies</a></li>
+            <li><a href="internship.html">💼 Manage Internships</a></li>
+            <li class="active"><a href="reports.html">📊 Reports</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Reports</h2>
+                <p>Platform-wide analytics and downloadable reports.</p>
+            </div>
+            <div class="profile">🛡 Admin</div>
+        </header>
+
+        <!-- ================= Filter Bar ================= -->
+
+        <section class="search-section">
+            <div class="search-container card">
+                <div class="filter-box">
+                    <label>Report Type</label>
+                    <select>
+                        <option>Placement Summary</option>
+                        <option>Company Activity</option>
+                        <option>Student Engagement</option>
+                    </select>
+                </div>
+                <div class="filter-box">
+                    <label>Date Range</label>
+                    <select>
+                        <option>This Month</option>
+                        <option>Last 3 Months</option>
+                        <option>This Year</option>
+                    </select>
+                </div>
+                <button class="primary-btn">⬇ Export as PDF</button>
+            </div>
+        </section>
+
+        <!-- ================= Summary Cards ================= -->
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>342</h2>
+                <p>Active Internships</p>
+            </div>
+            <div class="stat-card">
+                <h2>2,910</h2>
+                <p>Total Applications</p>
+            </div>
+            <div class="stat-card">
+                <h2>486</h2>
+                <p>Students Placed</p>
+            </div>
+            <div class="stat-card">
+                <h2>39.2%</h2>
+                <p>Placement Rate</p>
+            </div>
+        </section>
+
+        <!-- ================= Charts ================= -->
+
+        <section class="charts-section">
+
+            <div class="content-card chart-card">
+                <h3>Applications Trend (Last 6 Months)</h3>
+                <div class="bar-chart">
+                    <div class="bar" style="height:45%"><span>Feb</span></div>
+                    <div class="bar" style="height:60%"><span>Mar</span></div>
+                    <div class="bar" style="height:52%"><span>Apr</span></div>
+                    <div class="bar" style="height:78%"><span>May</span></div>
+                    <div class="bar" style="height:85%"><span>Jun</span></div>
+                    <div class="bar" style="height:95%"><span>Jul</span></div>
+                </div>
+            </div>
+
+            <div class="content-card chart-card">
+                <h3>Placement by Department</h3>
+                <ul class="progress-list">
+                    <li>
+                        <span>Computer Engineering</span>
+                        <div class="progress-track"><div class="progress-fill" style="width:82%"></div></div>
+                        <strong>82%</strong>
+                    </li>
+                    <li>
+                        <span>Information Technology</span>
+                        <div class="progress-track"><div class="progress-fill" style="width:74%"></div></div>
+                        <strong>74%</strong>
+                    </li>
+                    <li>
+                        <span>AI &amp; Data Science</span>
+                        <div class="progress-track"><div class="progress-fill" style="width:68%"></div></div>
+                        <strong>68%</strong>
+                    </li>
+                    <li>
+                        <span>Electronics</span>
+                        <div class="progress-track"><div class="progress-fill" style="width:55%"></div></div>
+                        <strong>55%</strong>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- ================= Downloadable Reports Table ================= -->
+
+        <section class="manage-section">
+
+            <div class="section-header">
+                <h2>Generated Reports</h2>
+            </div>
+
+            <div class="content-card manage-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report Name</th>
+                            <th>Type</th>
+                            <th>Generated On</th>
+                            <th>Format</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Placement Summary — June 2026</td>
+                            <td>Placement Summary</td>
+                            <td>1 Jul 2026</td>
+                            <td>PDF</td>
+                            <td><button class="secondary-btn">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>Company Activity Report — Q2 2026</td>
+                            <td>Company Activity</td>
+                            <td>28 Jun 2026</td>
+                            <td>PDF</td>
+                            <td><button class="secondary-btn">Download</button></td>
+                        </tr>
+                        <tr>
+                            <td>Student Engagement Report — May 2026</td>
+                            <td>Student Engagement</td>
+                            <td>2 Jun 2026</td>
+                            <td>PDF</td>
+                            <td><button class="secondary-btn">Download</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

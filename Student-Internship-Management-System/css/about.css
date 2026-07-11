@@ -1,0 +1,197 @@
+/* ================= About Hero ================= */
+
+#about-hero{
+    width:90%;
+    margin:0 auto;
+    padding:180px 80px 60px;
+    text-align:center;
+}
+
+.about-hero-content h1{
+    font-size:52px;
+    font-weight:700;
+    color:#FFFFFF;
+    margin-bottom:25px;
+}
+
+.about-hero-content h1 span{
+    color:#FF7A1A;
+}
+
+.about-hero-content p{
+    max-width:750px;
+    margin:0 auto;
+    color:#BFC6D0;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ================= Mission ================= */
+
+#mission{
+    padding:40px 80px 100px;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.mission-card{
+    text-align:left;
+    cursor:default;
+}
+
+.mission-card h3{
+    font-size:22px;
+}
+
+/* ================= Who We Serve ================= */
+
+#who-we-serve{
+    padding:40px 80px 100px;
+}
+
+#who-we-serve h2{
+    text-align:center;
+    color:#FFFFFF;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+/* ================= Why SIMS ================= */
+
+#why-sims{
+    padding:40px 80px 100px;
+}
+
+#why-sims h2{
+    text-align:center;
+    color:#FFFFFF;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.why-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.why-number{
+    font-size:36px;
+    font-weight:700;
+    color:#FF7A1A;
+    opacity:.6;
+    flex-shrink:0;
+}
+
+.why-item h3{
+    color:#FFFFFF;
+    margin-bottom:10px;
+}
+
+.why-item p{
+    color:#C7D0DB;
+    line-height:1.7;
+}
+
+/* ================= CTA ================= */
+
+#about-cta{
+    text-align:center;
+    padding:80px 40px;
+    background:#2A3443;
+    margin:0 80px 0;
+    border-radius:24px;
+}
+
+#about-cta h2{
+    color:#FFFFFF;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+#about-cta p{
+    color:#BFC6D0;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+/* ================= Footer ================= */
+
+#site-footer{
+    margin-top:60px;
+    padding:40px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+#site-footer p{
+    color:#8B93A1;
+    font-size:14px;
+}
+
+.footer-links{
+    display:flex;
+    gap:25px;
+}
+
+.footer-links a{
+    color:#C7D0DB;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FF7A1A;
+}
+
+@media (max-width:900px){
+
+    #about-hero,
+    #mission,
+    #who-we-serve,
+    #why-sims{
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .mission-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    #about-cta{
+        margin:0 30px;
+    }
+
+    #site-footer{
+        padding:30px;
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media (max-width:600px){
+
+    .about-hero-content h1{
+        font-size:36px;
+    }
+}

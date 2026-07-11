@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Registration | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/admin-register.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-card">
+
+        <h1>College Registration</h1>
+
+        <p>Register your college to manage internships efficiently.</p>
+
+        <form onsubmit="return handleRegister(event)">
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>College Name</label>
+                    <input type="text" placeholder="Enter College Name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Placement Officer</label>
+                    <input type="text" placeholder="Enter Officer Name" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Contact Number</label>
+                    <input type="tel" placeholder="Enter Contact Number" required>
+                </div>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>College Address</label>
+
+                <textarea rows="4" placeholder="Enter College Address"></textarea>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create Password" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <div class="bottom-links">
+
+            Already have an account?
+
+            <a href="../login.html">Login</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script>
+        function handleRegister(event) {
+            event.preventDefault();
+            alert("College registration submitted successfully! Please login to continue.");
+            window.location.href = "../login.html";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

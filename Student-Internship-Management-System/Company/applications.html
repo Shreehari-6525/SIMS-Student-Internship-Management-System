@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Applications | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/company/company-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/company/dashboard.css">
+    <link rel="stylesheet" href="../css/company/applications.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="blue">S</span>IMS</h2>
+            <p>Company Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="profile.html">🏢 Company Profile</a></li>
+            <li><a href="post-internships.html">➕ Post Internship</a></li>
+            <li><a href="manage-internships.html">💼 Manage Internships</a></li>
+            <li class="active"><a href="applications.html">📄 Applications</a></li>
+            <li><a href="shortlisted.html">⭐ Shortlisted Students</a></li>
+            <li><a href="interviews.html">📅 Interviews</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Applications</h2>
+                <p>Review all student applications across your internship postings.</p>
+            </div>
+            <div class="profile">🏢 Google India Pvt. Ltd.</div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container card">
+                <div class="search-box">
+                    <input type="text" placeholder="Search by student name or role..." data-search-input=".application-card">
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option>All Internships</option>
+                        <option>Software Development Intern</option>
+                        <option>Java Developer Intern</option>
+                        <option>UI/UX Design Intern</option>
+                    </select>
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option>All Status</option>
+                        <option>Pending</option>
+                        <option>Under Review</option>
+                        <option>Shortlisted</option>
+                        <option>Rejected</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-applications">
+
+            <div class="section-header">
+                <h2>All Applications</h2>
+                <p>148 total applications</p>
+            </div>
+
+            <div class="application-list">
+
+                <div class="application-card">
+                    <div class="student-info">
+                        <div class="student-avatar">SP</div>
+                        <div>
+                            <h3>Shreehari Patil</h3>
+                            <p>Software Development Intern</p>
+                            <span>Applied 2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="student-details">
+                        <span>CGPA: <strong>8.74</strong></span>
+                        <span>Status: <strong class="pending">Pending</strong></span>
+                    </div>
+                    <div class="application-actions">
+                        <button class="view-btn" data-modal-open="modal-applicant">View</button>
+                        <button class="shortlist-btn">Shortlist</button>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="student-info">
+                        <div class="student-avatar">SD</div>
+                        <div>
+                            <h3>Sujal Dalvi</h3>
+                            <p>Java Developer Intern</p>
+                            <span>Applied Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="student-details">
+                        <span>CGPA: <strong>8.52</strong></span>
+                        <span>Status: <strong class="review">Under Review</strong></span>
+                    </div>
+                    <div class="application-actions">
+                        <button class="view-btn" data-modal-open="modal-applicant">View</button>
+                        <button class="shortlist-btn">Shortlist</button>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="student-info">
+                        <div class="student-avatar">VG</div>
+                        <div>
+                            <h3>Vaishnav Gole</h3>
+                            <p>Frontend Developer Intern</p>
+                            <span>Applied 3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="student-details">
+                        <span>CGPA: <strong>9.12</strong></span>
+                        <span>Status: <strong class="shortlisted">Shortlisted</strong></span>
+                    </div>
+                    <div class="application-actions">
+                        <button class="view-btn" data-modal-open="modal-applicant">View</button>
+                        <button class="shortlist-btn">Interview</button>
+                    </div>
+                </div>
+
+                <div class="application-card">
+                    <div class="student-info">
+                        <div class="student-avatar">RM</div>
+                        <div>
+                            <h3>Riya Mehta</h3>
+                            <p>UI/UX Design Intern</p>
+                            <span>Applied 4 days ago</span>
+                        </div>
+                    </div>
+                    <div class="student-details">
+                        <span>CGPA: <strong>8.90</strong></span>
+                        <span>Status: <strong class="rejected">Rejected</strong></span>
+                    </div>
+                    <div class="application-actions">
+                        <button class="view-btn" data-modal-open="modal-applicant">View</button>
+                        <button class="shortlist-btn" disabled>Shortlist</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <button>←</button>
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <button>→</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= Applicant Modal ================= -->
+
+<div class="modal-overlay" id="modal-applicant">
+    <div class="modal-box">
+        <button class="modal-close" data-modal-close>&times;</button>
+        <h2>Applicant Details</h2>
+        <ul class="summary-list">
+            <li><span>Name</span><strong>Shreehari Patil</strong></li>
+            <li><span>Applied For</span><strong>Software Development Intern</strong></li>
+            <li><span>College</span><strong>Keystone School of Engineering</strong></li>
+            <li><span>CGPA</span><strong>8.74</strong></li>
+            <li><span>Email</span><strong>shreeharipatil200@gmail.com</strong></li>
+            <li><span>Resume</span><strong>Shreehari_Patil_Resume.pdf</strong></li>
+        </ul>
+        <div class="modal-buttons">
+            <button class="secondary-btn" data-modal-close>Close</button>
+            <button class="primary-btn">Shortlist Candidate</button>
+        </div>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

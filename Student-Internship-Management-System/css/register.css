@@ -1,0 +1,166 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:#1F2937;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,122,26,.08),
+    transparent 35%),
+    #1F2937;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.register-card{
+
+    width:1000px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    border-color: 2px #FF7A1A;
+
+    padding:50px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.register-card h1{
+
+    text-align:center;
+
+    color:#1F2937;
+
+    margin-bottom:10px;
+
+    font-size:38px;
+
+}
+
+.register-card>p{
+
+    text-align:center;
+
+    color:#555;
+
+    margin-bottom:45px;
+
+}
+
+.role-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.role-card{
+
+    background:#F8F9FC;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-decoration:none;
+
+    color:#1F2937;
+
+    text-align:center;
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+.role-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FF7A1A;
+
+    box-shadow:0 15px 35px rgba(255,122,26,.20);
+
+}
+
+.icon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.role-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.role-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+.bottom-link{
+
+    margin-top:45px;
+
+    text-align:center;
+
+}
+
+.bottom-link a{
+
+    color:#FF7A1A;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.bottom-link a:hover{
+
+    text-decoration:underline;
+
+}

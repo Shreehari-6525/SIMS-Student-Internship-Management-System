@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin/admin-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin/settings.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="purple">S</span>IMS</h2>
+            <p>Admin Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="admin-dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">🎓 Manage Students</a></li>
+            <li><a href="companies.html">🏢 Manage Companies</a></li>
+            <li><a href="internship.html">💼 Manage Internships</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li class="active"><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Settings</h2>
+                <p>Manage platform-wide configuration and admin account.</p>
+            </div>
+            <div class="profile">🛡 Admin</div>
+        </header>
+
+        <section class="settings-section">
+
+            <div class="tabs">
+                <button class="active" data-tab-target="tab-account">🛡 Admin Account</button>
+                <button data-tab-target="tab-password">🔒 Password</button>
+                <button data-tab-target="tab-platform">🧩 Platform</button>
+                <button data-tab-target="tab-roles">👥 Admin Roles</button>
+            </div>
+
+            <div class="tab-panels">
+
+                <div class="tab-panel active" id="tab-account">
+                    <div class="content-card settings-card card">
+
+                        <div class="form-success" id="form-success">Settings updated successfully!</div>
+
+                        <h2>Admin Account</h2>
+
+                        <form data-validate>
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <label>Full Name</label>
+                                    <input type="text" value="System Administrator" required>
+                                </div>
+                                <div class="input-box">
+                                    <label>Email Address</label>
+                                    <input type="email" value="admin@sims.edu" required>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <label>Phone Number</label>
+                                <input type="tel" value="9000000000" required>
+                            </div>
+                            <button type="submit" class="primary-btn">Save Changes</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-password">
+                    <div class="content-card settings-card card">
+                        <h2>Change Password</h2>
+                        <form data-validate data-reset-on-success>
+                            <div class="input-box">
+                                <label>Current Password</label>
+                                <input type="password" placeholder="Enter current password" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-box">
+                                    <label>New Password</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter new password" required>
+                                </div>
+                                <div class="input-box">
+                                    <label>Confirm New Password</label>
+                                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter new password" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="primary-btn">Update Password</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-platform">
+                    <div class="content-card settings-card card">
+                        <h2>Platform Configuration</h2>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Auto-Verify Student Accounts</h3>
+                                <p>Skip manual review for college-domain emails.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Require Company Document Verification</h3>
+                                <p>Companies must upload registration proof before posting.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                        </div>
+
+                        <div class="toggle-row">
+                            <div>
+                                <h3>Maintenance Mode</h3>
+                                <p>Temporarily disable student and company logins.</p>
+                            </div>
+                            <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-roles">
+                    <div class="content-card settings-card card">
+                        <h2>Admin Roles</h2>
+                        <p class="hint-text">Manage who has administrative access to the platform.</p>
+
+                        <div class="team-row">
+                            <div class="team-member">
+                                <div class="avatar">SA</div>
+                                <div>
+                                    <h3>System Administrator</h3>
+                                    <p>admin@sims.edu • Super Admin</p>
+                                </div>
+                            </div>
+                            <button class="secondary-btn">Manage</button>
+                        </div>
+
+                        <div class="team-row">
+                            <div class="team-member">
+                                <div class="avatar">MP</div>
+                                <div>
+                                    <h3>Meera Patwardhan</h3>
+                                    <p>meera.p@sims.edu • Moderator</p>
+                                </div>
+                            </div>
+                            <button class="secondary-btn">Manage</button>
+                        </div>
+
+                        <button class="primary-btn mt-15">+ Add Admin</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

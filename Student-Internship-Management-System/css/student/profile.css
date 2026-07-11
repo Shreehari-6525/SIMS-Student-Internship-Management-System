@@ -1,0 +1,539 @@
+/* ================= Profile Hero ================= */
+
+.profile-hero{
+
+    margin:35px;
+
+}
+
+.profile-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.profile-left{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+}
+
+.profile-image img{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #FF7A1A;
+
+}
+
+/* Temporary Avatar */
+
+.avatar-placeholder{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#FF7A1A;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:700;
+
+}
+
+.profile-info h1{
+
+    color:#1F2937;
+    margin-bottom:8px;
+
+}
+
+.role{
+
+    color:#FF7A1A;
+    font-weight:600;
+    margin-bottom:15px;
+
+}
+
+.profile-info p{
+
+    margin:8px 0;
+    color:#555;
+
+}
+
+.edit-btn{
+
+    padding:14px 28px;
+    background:#FF7A1A;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#1F2937;
+
+}
+
+/* ================= Personal Information ================= */
+
+.personal-info{
+
+    margin:35px;
+
+}
+
+.info-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+.info-item{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.info-item label{
+
+    color:#FF7A1A;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.info-item p{
+
+    color:#1F2937;
+    font-size:16px;
+    font-weight:500;
+
+}
+
+@media(max-width:768px){
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ================= Skills ================= */
+
+.skills-section{
+
+    margin:35px;
+
+}
+
+.skills-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.skills-grid{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
+.skills-grid span{
+
+    background:#FFF3E8;
+    color:#FF7A1A;
+    padding:12px 22px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+    cursor:pointer;
+
+}
+
+.skills-grid span:hover{
+
+    background:#FF7A1A;
+    color:#FFFFFF;
+    transform:translateY(-3px);
+
+}
+
+/* ================= Education ================= */
+
+.education-section{
+
+    margin:35px;
+
+}
+
+.education-container{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+.education-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.education-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+
+}
+
+.education-header h3{
+
+    color:#1F2937;
+    font-size:22px;
+
+}
+
+.education-year{
+
+    background:#FFF3E8;
+    color:#FF7A1A;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.college-name{
+
+    color:#FF7A1A;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.education-card p{
+
+    color:#555;
+    margin:8px 0;
+
+}
+
+@media(max-width:768px){
+
+    .education-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+
+    }
+
+}
+
+/* ================= Resume ================= */
+
+.resume-section{
+
+    margin:35px;
+
+}
+
+.resume-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.resume-left{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.resume-icon{
+
+    width:70px;
+    height:70px;
+    border-radius:16px;
+    background:#FFF3E8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+
+}
+
+.resume-details h3{
+
+    color:#1F2937;
+    margin-bottom:8px;
+
+}
+
+.resume-details p{
+
+    color:#666;
+    margin:5px 0;
+
+}
+
+.resume-actions{
+
+    display:flex;
+    gap:15px;
+
+}
+
+.download-btn{
+
+    padding:12px 24px;
+    border:none;
+    background:#FF7A1A;
+    color:#FFFFFF;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1F2937;
+
+}
+
+.replace-btn{
+
+    padding:12px 24px;
+    border:2px solid #FF7A1A;
+    background:#FFFFFF;
+    color:#FF7A1A;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.replace-btn:hover{
+
+    background:#FF7A1A;
+    color:#FFFFFF;
+
+}
+
+@media(max-width:768px){
+
+    .resume-card{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:25px;
+
+    }
+
+    .resume-actions{
+
+        width:100%;
+
+    }
+
+    .download-btn,
+    .replace-btn{
+
+        flex:1;
+
+    }
+
+}
+
+
+/* ================= Certifications ================= */
+
+.certifications-section{
+
+    margin:35px;
+
+}
+
+.certificate-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+}
+
+.certificate-card{
+
+    background:#FFFFFF;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.certificate-card img{
+
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-bottom:1px solid #eee;
+
+}
+
+.certificate-content{
+
+    padding:20px;
+
+}
+
+.certificate-content h3{
+
+    color:#1F2937;
+    margin-bottom:10px;
+
+}
+
+.certificate-content p{
+
+    color:#666;
+    margin-bottom:10px;
+
+}
+
+.certificate-content span{
+
+    color:#FF7A1A;
+    font-weight:600;
+
+}
+
+.certificate-buttons{
+
+    margin-top:20px;
+    display:flex;
+    gap:12px;
+
+}
+
+.view-btn,
+.download-btn{
+
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.view-btn{
+
+    background:#1F2937;
+    color:white;
+
+}
+
+.view-btn:hover{
+
+    background:#000;
+
+}
+
+.download-btn{
+
+    background:#FF7A1A;
+    color:white;
+
+}
+
+.download-btn:hover{
+
+    background:#e66b0d;
+
+}
+
+img{
+    width:100%;
+    height:300px;
+    object-fit:contain;
+    background:#f5f5f5;
+    padding:10px;
+}

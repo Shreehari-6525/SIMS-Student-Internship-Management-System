@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Internships | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin/admin-common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin/students.css">
+    <link rel="stylesheet" href="../css/admin/internship.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2><span class="purple">S</span>IMS</h2>
+            <p>Admin Portal</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="admin-dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="students.html">🎓 Manage Students</a></li>
+            <li><a href="companies.html">🏢 Manage Companies</a></li>
+            <li class="active"><a href="internship.html">💼 Manage Internships</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="../login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div class="welcome">
+                <h2>Manage Internships</h2>
+                <p>Moderate internship postings published by companies.</p>
+            </div>
+            <div class="profile">🛡 Admin</div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container card">
+                <div class="search-box">
+                    <input type="text" placeholder="Search by title or company..." data-search-input=".data-row">
+                </div>
+                <div class="filter-box">
+                    <select>
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Flagged</option>
+                        <option>Closed</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="manage-section">
+
+            <div class="section-header">
+                <h2>All Internship Postings</h2>
+                <p>342 active postings</p>
+            </div>
+
+            <div class="content-card manage-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Company</th>
+                            <th>Applications</th>
+                            <th>Posted On</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data-row">
+                            <td>Software Development Intern</td>
+                            <td>Google India Pvt. Ltd.</td>
+                            <td>62</td>
+                            <td>1 Jun 2026</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-internship">👁</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>Full Stack Intern</td>
+                            <td>Microsoft India</td>
+                            <td>48</td>
+                            <td>28 May 2026</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-internship">👁</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>"Unpaid" Data Entry Intern</td>
+                            <td>QuickCash Ventures</td>
+                            <td>3</td>
+                            <td>5 Jul 2026</td>
+                            <td><span class="status pending">Flagged</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-internship">👁</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>Java Developer Intern</td>
+                            <td>TCS Limited</td>
+                            <td>41</td>
+                            <td>10 May 2026</td>
+                            <td><span class="status closed">Closed</span></td>
+                            <td class="actions-cell">
+                                <button class="icon-btn" title="View" data-modal-open="modal-internship">👁</button>
+                                <button class="icon-btn danger" title="Delete" data-delete-confirm="this internship posting">🗑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button>←</button>
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <button>→</button>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- ================= Internship View Modal ================= -->
+
+<div class="modal-overlay" id="modal-internship">
+    <div class="modal-box">
+        <button class="modal-close" data-modal-close>&times;</button>
+        <h2>Internship Details</h2>
+        <ul class="summary-list">
+            <li><span>Title</span><strong>Software Development Intern</strong></li>
+            <li><span>Company</span><strong>Google India Pvt. Ltd.</strong></li>
+            <li><span>Stipend</span><strong>₹25,000 / month</strong></li>
+            <li><span>Duration</span><strong>3 Months</strong></li>
+            <li><span>Applications</span><strong>62</strong></li>
+            <li><span>Status</span><strong>Active</strong></li>
+        </ul>
+    </div>
+</div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

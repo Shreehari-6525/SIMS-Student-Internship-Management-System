@@ -1,0 +1,146 @@
+.main-content{
+    background:#F8FAFC;
+}
+
+.interview-actions{
+    margin:35px 35px 0;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.upcoming-interviews,
+.completed-interviews{
+    margin:35px;
+}
+
+.interview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.interview-card{
+    padding:25px;
+    transition:.3s;
+}
+
+.interview-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.interview-company{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.student-avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#2563EB;
+    color:#FFFFFF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    flex-shrink:0;
+}
+
+.interview-company h3{
+    color:#1F2937;
+    margin-bottom:4px;
+    font-size:16px;
+}
+
+.interview-company p{
+    color:#666;
+    font-size:13px;
+}
+
+.interview-info{
+    margin-bottom:20px;
+}
+
+.interview-info p{
+    margin:8px 0;
+    color:#555;
+    font-size:14px;
+}
+
+.interview-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.interview-buttons button{
+    flex:1;
+}
+
+.manage-table{
+    padding:20px;
+    overflow-x:auto;
+}
+
+.manage-table table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:600px;
+}
+
+.manage-table th{
+    text-align:left;
+    padding:16px;
+    background:#F1F5F9;
+    color:#1F2937;
+    font-size:14px;
+}
+
+.manage-table td{
+    padding:16px;
+    border-top:1px solid #E5E7EB;
+    color:#555;
+    font-size:14px;
+}
+
+.status{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.status.active{ background:#DCFCE7; color:#15803D; }
+.status.closed{ background:#FEE2E2; color:#B91C1C; }
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box label{
+    font-weight:600;
+    color:#1F2937;
+    margin-bottom:8px;
+    display:block;
+}
+
+.full-width{
+    width:100%;
+    text-align:center;
+}
+
+@media (max-width:576px){
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+}

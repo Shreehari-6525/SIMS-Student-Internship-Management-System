@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Registration | SIMS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/company-register.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-card">
+
+        <h1>Company Registration</h1>
+
+        <p>Register your organization and hire talented interns through SIMS.</p>
+
+        <form onsubmit="return handleRegister(event)">
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Company Name</label>
+                    <input type="text" placeholder="Enter Company Name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>HR / Recruiter Name</label>
+                    <input type="text" placeholder="Enter Recruiter Name" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Official Email</label>
+                    <input type="email" placeholder="Enter Company Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Contact Number</label>
+                    <input type="tel" placeholder="Enter Contact Number" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Company Website</label>
+                    <input type="url" placeholder="https://example.com">
+                </div>
+
+                <div class="input-box">
+
+                    <label>Industry Type</label>
+
+                    <select required>
+
+                        <option value="" disabled selected>Select Industry</option>
+                        <option>Software Development</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Cyber Security</option>
+                        <option>Cloud Computing</option>
+                        <option>Finance</option>
+                        <option>Healthcare</option>
+                        <option>Manufacturing</option>
+                        <option>Education</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Company Address</label>
+
+                <textarea rows="4" placeholder="Enter Company Address"></textarea>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create Password" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <div class="bottom-links">
+
+            Already have an account?
+
+            <a href="../login.html">Login</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script>
+        function handleRegister(event) {
+            event.preventDefault();
+            alert("Company registration submitted successfully! Our team will verify your details shortly, then you can login.");
+            window.location.href = "../login.html";
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

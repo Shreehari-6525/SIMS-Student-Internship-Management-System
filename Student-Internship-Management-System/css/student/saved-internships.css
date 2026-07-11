@@ -1,0 +1,13 @@
+.main-content{
+    background:#F5F7FA;
+}
+
+.internships{
+    margin:35px;
+}
+
+.save-btn.saved{
+    background:#FF7A1A;
+    color:#FFFFFF;
+    border-color:#FF7A1A;
+}
