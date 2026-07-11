@@ -1,7 +1,7 @@
 # 🎓 Student Internship Management System (SIMS)
 
 <p align="center">
-  <img src="Screenshots/1-landing-page.png" alt="SIMS Banner" width="100%">
+  <img src="Student-Internship-Management-System/Screenshots/1-landing-page.png" alt="SIMS Banner" width="100%">
 </p>
 
 <p align="center">
