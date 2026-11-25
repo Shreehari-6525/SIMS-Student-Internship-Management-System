@@ -152,7 +152,7 @@ Special thanks to:
 
 - **CodeZone IT Solutions**
 - **Shubhangi Shinde**
-- **Pranal Madam**
+- **Pranali Madam**
 
 for their valuable guidance, mentorship, and support throughout the development of this project.
 
